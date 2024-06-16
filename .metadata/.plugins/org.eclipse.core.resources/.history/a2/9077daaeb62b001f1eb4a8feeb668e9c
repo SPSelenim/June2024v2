@@ -1,0 +1,38 @@
+package frwk1;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class POMHome {
+
+	public WebDriver driver=null;
+public String firstName="fname";
+
+	
+	public POMHome(WebDriver driver)
+	{
+		this.driver=driver;
+	}
+	
+	public WebElement getFirstName(String Fname)
+	{
+		WebElement FirstName1=null;
+		driver.findElement(By.id(firstName)).sendKeys(Fname);
+		return FirstName1;
+	}
+	public void myHome()
+	{
+		driver.manage().window().maximize();
+		driver.findElement(By.id("fname")).sendKeys("Hello");
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			System.out.println(e.getMessage());
+		}
+
+		System.out.println("DONE");
+
+	}
+	
+}

@@ -1,0 +1,14 @@
+package frwk1;
+
+import org.testng.annotations.Test;
+
+public class Home1 {
+  @Test
+  public void f() {
+	  System.out.println("Test ------ June2024");
+
+	  
+  }
+
+
+}

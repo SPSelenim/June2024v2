@@ -1,0 +1,13 @@
+package frwk1;
+
+import org.openqa.selenium.WebDriver;
+
+public class POMHome {
+
+	public WebDriver driver=null;
+	public POMHome(WebDriver driver)
+	{
+		this.driver=driver;
+	}
+	
+}
